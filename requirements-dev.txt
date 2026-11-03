@@ -1,0 +1,3 @@
+# Only needed to regenerate the demo dataset / sample documents (scripts/)
+-r requirements.txt
+reportlab>=4.0

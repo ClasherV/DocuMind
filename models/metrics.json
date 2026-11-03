@@ -1,0 +1,228 @@
+{
+  "trained_at": "2026-11-04T02:49:24",
+  "dataset_file": "training_data.csv",
+  "n_train": 480,
+  "n_test": 150,
+  "labels": [
+    "Business",
+    "Education",
+    "Finance",
+    "General",
+    "Legal",
+    "Technology"
+  ],
+  "selected_algorithm": "logreg",
+  "held_out_results": {
+    "logreg": {
+      "accuracy": 0.9733333333333334,
+      "macro_f1": 0.9732905982905984,
+      "per_class": {
+        "Business": {
+          "precision": 0.9259259259259259,
+          "recall": 1.0,
+          "f1-score": 0.9615384615384616,
+          "support": 25.0
+        },
+        "Education": {
+          "precision": 0.9259259259259259,
+          "recall": 1.0,
+          "f1-score": 0.9615384615384616,
+          "support": 25.0
+        },
+        "Finance": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "General": {
+          "precision": 1.0,
+          "recall": 0.92,
+          "f1-score": 0.9583333333333334,
+          "support": 25.0
+        },
+        "Legal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "Technology": {
+          "precision": 1.0,
+          "recall": 0.92,
+          "f1-score": 0.9583333333333334,
+          "support": 25.0
+        },
+        "accuracy": 0.9733333333333334,
+        "macro avg": {
+          "precision": 0.9753086419753086,
+          "recall": 0.9733333333333333,
+          "f1-score": 0.9732905982905984,
+          "support": 150.0
+        },
+        "weighted avg": {
+          "precision": 0.9753086419753086,
+          "recall": 0.9733333333333334,
+          "f1-score": 0.9732905982905984,
+          "support": 150.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          23
+        ]
+      ]
+    },
+    "naive_bayes": {
+      "accuracy": 0.9733333333333334,
+      "macro_f1": 0.9732905982905984,
+      "per_class": {
+        "Business": {
+          "precision": 0.9259259259259259,
+          "recall": 1.0,
+          "f1-score": 0.9615384615384616,
+          "support": 25.0
+        },
+        "Education": {
+          "precision": 0.9259259259259259,
+          "recall": 1.0,
+          "f1-score": 0.9615384615384616,
+          "support": 25.0
+        },
+        "Finance": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "General": {
+          "precision": 1.0,
+          "recall": 0.92,
+          "f1-score": 0.9583333333333334,
+          "support": 25.0
+        },
+        "Legal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "Technology": {
+          "precision": 1.0,
+          "recall": 0.92,
+          "f1-score": 0.9583333333333334,
+          "support": 25.0
+        },
+        "accuracy": 0.9733333333333334,
+        "macro avg": {
+          "precision": 0.9753086419753086,
+          "recall": 0.9733333333333333,
+          "f1-score": 0.9732905982905984,
+          "support": 150.0
+        },
+        "weighted avg": {
+          "precision": 0.9753086419753086,
+          "recall": 0.9733333333333334,
+          "f1-score": 0.9732905982905984,
+          "support": 150.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          25,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          23
+        ]
+      ]
+    }
+  },
+  "note": "Metrics come from the held-out test split BEFORE the final refit on all data. If the dataset is the synthetic demo set, they are optimistic and do not predict performance on real documents."
+}

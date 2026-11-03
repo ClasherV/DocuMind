@@ -1,0 +1,59 @@
+/* DocuMind - dark navy dashboard theme (blue + cyan accents) */
+html, body, [class*="css"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; }
+
+.stApp { background: radial-gradient(1200px 600px at 10% -10%, #12224a 0%, #0A1128 55%); }
+.block-container { padding-top: 2rem; padding-bottom: 3rem; max-width: 1200px; }
+
+section[data-testid="stSidebar"] { background: #0D1733; border-right: 1px solid #1E2B4F; }
+h1, h2, h3 { letter-spacing: -0.01em; }
+
+/* Page header */
+.dm-header h1 { margin: 0; font-size: 2rem; background: linear-gradient(90deg, #3B82F6, #22D3EE);
+                -webkit-background-clip: text; background-clip: text; color: transparent; }
+.dm-header p { color: #94A3B8; margin: .25rem 0 1.25rem 0; }
+
+/* Metric / info cards */
+.dm-card { background: #111C3A; border: 1px solid #1E2B4F; border-radius: 14px; padding: 16px 18px;
+           height: 100%; box-shadow: 0 4px 18px rgba(0,0,0,.25); }
+.dm-label { color: #94A3B8; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+.dm-value { color: #E2E8F0; font-size: 1.7rem; font-weight: 700; margin-top: 2px; word-break: break-word; }
+.dm-value.accent { color: #22D3EE; }
+.dm-sub { color: #94A3B8; font-size: .8rem; margin-top: 2px; }
+
+/* Hero on the home page */
+.dm-hero { background: linear-gradient(135deg, #12224a 0%, #0f2a55 60%, #0c3b5c 100%);
+           border: 1px solid #1E3A6B; border-radius: 18px; padding: 28px 30px; margin-bottom: 18px; }
+.dm-hero h1 { margin: 0 0 6px 0; font-size: 2.4rem; color: #E2E8F0; }
+.dm-hero h1 span { color: #22D3EE; }
+.dm-hero p { color: #B6C4DB; margin: 0; font-size: 1.05rem; }
+
+/* Pipeline steps */
+.dm-pipeline { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 6px 0 18px 0; }
+.dm-step { background: #111C3A; border: 1px solid #1E3A6B; color: #E2E8F0; border-radius: 999px;
+           padding: 6px 14px; font-size: .85rem; }
+.dm-arrow { color: #22D3EE; }
+
+/* Status pills */
+.dm-pill { display: inline-block; border-radius: 999px; padding: 3px 12px; font-size: .78rem;
+           margin: 2px 6px 2px 0; border: 1px solid #1E3A6B; background: #0F1B3A; color: #E2E8F0; }
+.dm-pill.ok { border-color: #0E7490; color: #67E8F9; }
+.dm-pill.warn { border-color: #92400E; color: #FCD34D; }
+
+/* Classification / search result blocks */
+.dm-result { background: linear-gradient(135deg, #12224a, #0b3a5a); border: 1px solid #22D3EE55;
+             border-radius: 16px; padding: 20px 24px; }
+.dm-passage { background: #111C3A; border: 1px solid #1E2B4F; border-left: 4px solid #22D3EE;
+              border-radius: 10px; padding: 14px 16px; margin: 10px 0 4px 0; line-height: 1.55; }
+.dm-passage .meta { color: #94A3B8; font-size: .8rem; margin-bottom: 6px; }
+.dm-summary { background: #111C3A; border: 1px solid #1E2B4F; border-radius: 12px; padding: 18px 20px;
+              line-height: 1.65; }
+mark { background: #22D3EE33; color: #A5F3FC; border-radius: 4px; padding: 0 3px; }
+
+/* Buttons */
+.stButton > button, .stDownloadButton > button { border-radius: 10px; border: 1px solid #22D3EE66; }
+.stButton > button:hover, .stDownloadButton > button:hover { border-color: #22D3EE; color: #22D3EE; }
+
+@media (max-width: 768px) {
+  .dm-hero h1 { font-size: 1.7rem; }
+  .dm-value { font-size: 1.35rem; }
+}
